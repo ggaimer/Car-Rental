@@ -1,0 +1,69 @@
+.memories {
+    margin-top: 120px;
+}
+
+.memories__content {
+    max-width: 643px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 40px;
+}
+
+.memories__image {
+    border-radius: var(--border-radius-medium);
+}
+
+.memories__content-title {
+    line-height: normal;
+}
+
+.memories__content-text {
+    color: var(--color-black-opacity);
+}
+
+.memories__item {
+    position: relative;
+    max-width: 301px;
+    height: 60px;
+    padding-left: 42px;
+}
+
+.memories__item::before {
+    content: '';
+
+    position: absolute;
+
+    width: 32px;
+    aspect-ratio: 1;
+
+    background: url("../../images/icons/check.svg") center/contain no-repeat;
+
+    top: 0;
+    left: 0;
+}
+
+.memories__item p {
+    color: var(--color-black-opacity);
+    line-height: normal;
+}
+
+.memories__item p:first-child {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.memories__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.memories__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

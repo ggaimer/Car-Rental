@@ -1,0 +1,99 @@
+.info-list__item-address,
+.info-list__item-link {
+	font-weight: 600;
+    line-height: 1.62;
+}
+
+.info-list__item-link:hover {
+	color: var(--color-orange);
+}
+
+.info-list__item-address {
+	font-style: normal;
+	white-space: nowrap;
+}
+
+.info-list__item {
+	height: 34px;
+	line-height: normal;
+
+	display: flex;
+	align-items: center;
+}
+
+.info-list__item:nth-child(2) {
+	margin-left: 112px;
+	margin-right: 167px;
+}
+
+.info-list__item-image {
+	margin-right: 12px;
+
+	width: 40px;
+	aspect-ratio: 1;
+
+	border-radius: var(--border-radius-big);
+	background-color: var(--color-orange);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.info-list__item-image::before {
+	content: '';
+	width: 24px;
+	aspect-ratio: 1;
+	background: url(../../images/icons/address.svg) center / contain no-repeat;
+}
+
+.info-list__item:nth-child(2) .info-list__item-image::before {
+	background: url(../../images/icons/email.svg) center / contain no-repeat;
+}
+
+.info-list__item:last-child .info-list__item-image::before {
+	background: url(../../images/icons/clock.svg) center / contain no-repeat;
+}
+
+.info-list__item-hours {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.info-list {
+	display: flex;
+    flex-wrap: wrap;
+	margin-left: 192px;
+    color: var(--color-black);
+}
+
+.info-list__contact {
+    margin-block: 120px;
+    margin-left: 0 !important;
+
+    justify-content: space-between;
+}
+
+.info-list__item.info-list__item-contact:nth-child(2) {
+    margin-inline: 0;
+}
+
+.info-list__item-text__contact {
+    font-size: 20px;
+}
+
+.info-list__item-image.info-list__item-image__contact {
+    width: 64px;
+    aspect-ratio: 1;
+}
+
+.info-list__item-address__contact,
+.info-list__item-link__contact {
+    font-size: 20px;
+    line-height: 1.3 !important;
+}
+
+.info-list__item.info-list__item-contact .info-list__item-image.info-list__item-image__contact:nth-last-of-type()::before {
+    background: url(../../images/icons/clock.svg) center / contain no-repeat;
+}

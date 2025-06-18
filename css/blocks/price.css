@@ -1,0 +1,16 @@
+.price {
+	margin-bottom: 4px;
+
+	display: block;
+
+	color: var(--color-violet);
+	font-size: 24px;
+	font-weight: 600;
+	text-align: end;
+	text-transform: capitalize;
+}
+
+.price-day {
+	font-size: 14px;
+	color: var(--color-black-opacity);
+}

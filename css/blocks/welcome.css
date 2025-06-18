@@ -1,0 +1,70 @@
+.welcome__wrapper {
+	position: relative;
+
+	padding: 78px;
+	border-radius: 40px;
+
+	background-image: url('../../images/welcome/welcome-bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top left;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.welcome__wrapper::before {
+	content: '';
+	position: absolute;
+
+	background: url('../../images/welcome/welcome-bg-car.png') center/contain
+		no-repeat;
+
+	width: 698px;
+	height: 418px;
+
+	z-index: 1;
+
+	right: 253px;
+	bottom: 0;
+}
+
+.welcome__content {
+	position: relative;
+	z-index: 10;
+}
+
+.welcome__title {
+	margin-bottom: 27px;
+
+	max-width: 686px;
+    
+	font-size: clamp(30px, 4.2vw, 60px);
+	font-weight: 700;
+	line-height: normal;
+}
+
+.welcome__text {
+	margin-bottom: 33px;
+	max-width: 464px;
+	line-height: normal;
+}
+
+.welcome__link {
+	padding: 0 28px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 40px;
+
+	font-family: var(--second-family);
+	font-weight: 600;
+}
+
+.welcome__link:hover {
+	color: var(--color-orange);
+	background-color: var(--color-white);
+}

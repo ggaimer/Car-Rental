@@ -1,0 +1,19 @@
+.contact__title {
+    margin-top: 69px;
+    text-align: center;
+}
+
+.contact__image {
+    border-radius: var(--border-radius-medium);
+}
+
+.contact__wrapper {
+    margin-top: 129px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__link:hover {
+    color: var(--color-orange);
+    background-color: var(--color-white)  !important;
+}

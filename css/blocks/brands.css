@@ -1,0 +1,16 @@
+.brands {
+    padding-bottom: 120px;
+}
+
+.brands__list {
+    padding-block: 60px;
+    border-radius: 40px;
+    background-color: var(--color-gray);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 135px;
+    row-gap: 30px;
+}

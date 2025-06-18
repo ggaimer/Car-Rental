@@ -1,0 +1,22 @@
+:root {
+	--container-width: 1296px;
+	--container-offset: 15px;
+
+	--color-orange: #ff9e0c;
+	--color-violet: #5937e0;
+	--color-violet-light: #694be3;
+	--color-black: #000;
+	--color-black-opacity: rgba(0, 0, 0, 0.6);
+	--color-white: #fff;
+	--color-gray: #f9f9f9;
+	--color-gray-light: #fafafa;
+
+	--font-family-base: 'Work Sans', sans-serif;
+	--second-family: 'Inter', sans-serif;
+
+	--transition-duration: 0.3s;
+
+	--border-radius-small: 12px;
+	--border-radius-medium: 20px;
+	--border-radius-big: 50px;
+}

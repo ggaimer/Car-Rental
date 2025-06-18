@@ -1,0 +1,101 @@
+.card {
+	padding: 24px;
+
+	width: 416px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: var(--border-radius-medium);
+	line-height: normal;
+	background-color: var(--color-gray-light);
+}
+
+.card__title {
+	margin-bottom: 4px;
+
+	display: block;
+
+	color: #000;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.card__subtitle {
+	color: var(--color-black-opacity);
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.card__list-item {
+	width: 100px;
+	height: 24px;
+
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+}
+
+.card__list-item::before {
+	content: '';
+
+	width: 24px;
+	aspect-ratio: 1;
+
+	background: url('../../images/icons/transmission.svg') center/contain no-repeat;
+
+	margin-right: 8px;
+}
+
+.card__list-item:nth-child(2)::before {
+	background: url('../../images/icons/fuel.svg') center/contain no-repeat;
+}
+
+.card__list-item:last-child {
+	width: 150px;
+}
+
+.card__list-item:last-child::before {
+	background: url('../../images/icons/conditioner.svg') center/contain no-repeat;
+}
+
+.card__list-text {
+	color: var(--color-black-opacity);
+	text-transform: capitalize;
+}
+
+.card__list {
+	margin-bottom: 40px;
+
+	display: flex;
+	column-gap: 20px;
+	justify-content: space-between;
+}
+
+.card__header {
+	margin: 20px 0 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__link {
+	padding: 15px 0;
+
+	font-weight: 600;
+	font-family: var(--second-family);
+
+	width: 100%;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: var(--border-radius-small);
+	background-color: var(--color-violet);
+}
+
+.card__link:hover {
+	background-color: var(--color-orange);
+}

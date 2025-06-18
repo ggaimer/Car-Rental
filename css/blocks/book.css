@@ -1,0 +1,76 @@
+.book__title {
+	margin-bottom: 40px;
+
+	color: #000;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.book__title--white {
+	color: var(--color-white);
+}
+
+.book__accordion {
+    max-width: 336px;
+
+	padding: 9px 16px !important;
+
+	border: none;
+	border-radius: var(--border-radius-small);
+	background-color: var(--color-gray-light);
+}
+
+.book__accordion--light {
+	background-color: var(--color-violet-light);
+}
+
+.book__accordion--light > * {
+	color: var(--color-white);
+}
+
+.book__accordion-questions h3 {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--color-black);
+}
+
+.book__link {
+	padding: 0 130px;
+	margin-top: 40px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 40px;
+
+	font-family: var(--second-family);
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.book__link:hover {
+	background-color: var(--color-violet);
+}
+
+.book {
+    position: relative;
+	z-index: 10;
+
+	padding: 40px;
+
+	width: 416px;
+
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-medium);
+}
+
+.book--violet {
+	background-color: var(--color-violet);
+}
+
+.book__accordion-questions--light svg,
+.book__accordion-questions--light h3 {
+	color: var(--color-white);
+}

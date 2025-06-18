@@ -1,0 +1,54 @@
+.download__title {
+	margin-bottom: 40px;
+	max-width: 313px;
+
+	line-height: normal;
+}
+
+.download__text {
+	margin-bottom: 60px;
+	color: var(--color-black-opacity);
+	line-height: 1.5;
+}
+
+.download__link:hover {
+	opacity: 0.7;
+}
+
+.download__link-wrapper {
+	display: flex;
+	column-gap: 40px;
+}
+
+.download__content {
+	max-width: 536px;
+	margin-left: 86px;
+}
+
+.download__content-title {
+    color: var(--color-white);
+    line-height: normal;
+}
+
+.download__content-text {
+    margin-block: 40px;
+}
+
+.download__content-links {
+    display: flex;
+    column-gap: 24px;
+}
+
+.download__content-link:hover {
+    opacity: 0.7;
+}
+
+.download__image {
+	margin-right: 126px;
+}
+
+.download__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
