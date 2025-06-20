@@ -739,7 +739,9 @@
 	.info-list__item-link__contact,
 	.info-list__item-text__contact,
 	.info-list__item-hours,
-	.accrodion__questions h3 {
+	.accrodion__questions h3,
+    .phone__content-text--big, 
+    .phone__content-link--big {
 		font-size: 17px;
 	}
 
