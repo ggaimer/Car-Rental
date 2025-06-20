@@ -23,6 +23,11 @@
 	justify-content: space-between;
 }
 
+.accrodion__questions,
+.accrodion__questions.book__accordion-questions {
+    cursor: pointer;
+}
+
 .accrodion__answer p {
 	color: var(--color-black-opacity);
 	font-size: 20px;
@@ -41,7 +46,6 @@
 .questions__accordion {
     position: relative;
 	padding: 40px;
-	cursor: pointer;
 	border: 2px solid #adb5bd;
 	border-radius: var(--border-radius-medium);
 }
