@@ -3,6 +3,10 @@
 	.feedback::before {
 		display: none;
 	}
+
+	.welcome__wrapper {
+		height: 100%;
+	}
 }
 
 @media (max-width: 1330px) {
@@ -14,9 +18,9 @@
 		justify-content: center;
 	}
 
-    .card {
-        width: 100%;
-    }
+	.card {
+		width: 100%;
+	}
 
 	.catalog__list {
 		grid-template-columns: repeat(2, 1fr);
@@ -39,16 +43,16 @@
 		align-items: center;
 	}
 
-    .contact__wrapper {
-        flex-direction: column-reverse;
-        row-gap: 30px;
-        align-items: center;
-    }
+	.contact__wrapper {
+		flex-direction: column-reverse;
+		row-gap: 30px;
+		align-items: center;
+	}
 }
 
 @media (max-width: 1280px) {
 	.reviews__list,
-    .posts__list {
+	.posts__list {
 		justify-content: center;
 		gap: 24px;
 	}
@@ -69,13 +73,17 @@
 	.advantages__title {
 		margin-bottom: 15px;
 	}
+
+    .advantages__wrapper-title {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 1155px) {
-    .info-list__contact {
-        gap: 40px;
-        justify-content: center;
-    }
+	.info-list__contact {
+		gap: 40px;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 1133px) {
@@ -111,21 +119,22 @@
 
 	.download-about__wrapper {
 		height: 100%;
-        margin-top: 120px;
+		margin-top: 120px;
 	}
 
-    .download-about__wrapper {
+	.download-about__wrapper {
 		padding: 60px 100px;
 	}
 
-    .download-about__image {
-        margin-bottom: 0;
-    }
+	.download-about__image {
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: 1060px) {
 	.header__inner {
 		justify-content: center;
+		row-gap: 10px;
 	}
 }
 
@@ -177,24 +186,24 @@
 }
 
 @media (max-width: 768px) {
-	.header__list {
-		row-gap: 25px;
+	.menu__list {
+		row-gap: 15px;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.header__nav {
+	.menu {
 		display: none;
 	}
 
-    .burger {
+	.burger {
 		display: block;
 		margin-left: auto;
 		margin-top: 5px;
 		margin-right: 30px;
 	}
-    
-	.header__nav--mobile {
+
+	.menu--mobile {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -203,7 +212,7 @@
 		z-index: 200;
 		top: 0;
 		left: 0;
-		width: 68%;
+		width: 63%;
 		height: 100vh;
 		background-color: var(--color-gray);
 	}
@@ -241,9 +250,9 @@
 	}
 
 	.facts__title,
-    .details__car-title,
-    .about__list-title,
-    .advantages__wrapper-title {
+	.details__car-title,
+	.about__list-title,
+	.advantages__wrapper-title {
 		margin-bottom: 5px;
 	}
 
@@ -295,10 +304,11 @@
 	}
 
 	.footer__title {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
-	.footer__nav {
+	.menu__footer {
+        display: flex;
 		margin-inline: 0;
 	}
 
@@ -307,9 +317,9 @@
 	}
 
 	.footer__info,
-    .details__info-link,
-    .details__list,
-    .catalog__title {
+	.details__info-link,
+	.details__list,
+	.catalog__title {
 		margin-bottom: 40px;
 	}
 
@@ -339,7 +349,7 @@
 	}
 
 	.about__title,
-    .contact__title {
+	.contact__title {
 		margin-top: 40px;
 	}
 
@@ -364,8 +374,8 @@
 	}
 
 	.memories,
-    .contact__wrapper,
-    .download-about__wrapper {
+	.contact__wrapper,
+	.download-about__wrapper {
 		margin-top: 80px;
 	}
 
@@ -374,13 +384,14 @@
 	}
 
 	.download-about,
-    .posts__list,
-    .info-list__contact {
+	.posts__list,
+	.info-list__contact {
 		margin-bottom: 80px;
 	}
 
 	.reviews,
-    .catalog {
+	.catalog,
+    .advantages {
 		padding-bottom: 80px;
 	}
 
@@ -407,13 +418,33 @@
 		padding-top: 10px;
 	}
 
-    .posts__title {
-        margin-bottom: 25px;
+	.posts__title {
+		margin-bottom: 25px;
+	}
+
+	.info-list__item-image.info-list__item-image__contact,
+	.phone__image-wrapper--big {
+		width: 50px;
+		aspect-ratio: 1;
+	}
+
+    .advantages__wrapper-info::before,
+    .advantages__wrapper-item:nth-of-type(2) .advantages__wrapper-info::before,
+    .advantages__wrapper-item:nth-of-type(3) .advantages__wrapper-info::before,
+    .advantages__wrapper-item:nth-of-type(4) .advantages__wrapper-info::before {
+        top: -5px;
     }
 
-    .info-list__item-image.info-list__item-image__contact {
-        width: 50px;
-        aspect-ratio: 1;
+    .menu__footer-item + .menu__footer-item {
+        margin-top: 0;
+    }
+
+    .info-list {
+        gap: 30px;
+    }
+
+    .feedback__form {
+        width: 100%;
     }
 }
 
@@ -424,7 +455,7 @@
 }
 
 @media (max-width: 660px) {
-	.header__nav--mobile {
+	.menu--mobile {
 		width: 55%;
 	}
 
@@ -433,7 +464,7 @@
 		justify-content: center;
 	}
 
-    .details__info-link {
+	.details__info-link {
 		width: 100%;
 	}
 
@@ -488,7 +519,7 @@
 		flex-direction: column;
 		align-items: start;
 		row-gap: 10px;
-        margin-bottom: 25px;
+		margin-bottom: 25px;
 	}
 
 	.card__header {
@@ -500,8 +531,8 @@
 	}
 }
 
-@media (max-width: 470px) {
-	.header__nav--mobile {
+@media (max-width: 520px) {
+	.menu--mobile {
 		width: 45%;
 	}
 }
@@ -517,16 +548,16 @@
 		padding: 10px;
 	}
 
-    .book-contact {
-        padding: 30px;
-    }
+	.book-contact {
+		padding: 30px;
+	}
 
 	.welcome__wrapper {
 		padding: 25px;
 	}
 
 	.advantages {
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 	}
 
 	.advantages__title {
@@ -547,8 +578,8 @@
 		padding: 40px 30px;
 	}
 
-	.footer__nav {
-		column-gap: 100px;
+	.menu__footer {
+		column-gap: 80px;
 	}
 
 	.footer__content {
@@ -627,7 +658,7 @@
 	}
 
 	.about__content,
-    .info-list__contact {
+	.info-list__contact {
 		margin-block: 60px;
 	}
 
@@ -659,14 +690,14 @@
 	.download__content-text {
 		margin-block: 14px;
 	}
-    
+
 	.accrodion__questions h3 {
 		max-width: 250px;
 	}
 
-    .questions__accordion + .questions__accordion {
-        margin-top: 15px;
-    }
+	.questions__accordion + .questions__accordion {
+		margin-top: 15px;
+	}
 
 	.feedback__wrapper {
 		padding: 30px 30px;
@@ -676,79 +707,102 @@
 		padding: 20px 36px 60px 36px;
 	}
 
-    .contact__wrapper {
+	.contact__wrapper {
+		row-gap: 20px;
+	}
+
+	.posts__list,
+	.info-list__contact,
+	.download-about {
+		margin-bottom: 60px;
+	}
+
+	.info-list__contact {
+		margin-block: 80px;
+	}
+
+	.info-list {
+		gap: 30px;
+	}
+
+	.book__title {
+		margin-bottom: 10px;
+	}
+
+	.posts__list-item {
+		width: 100%;
+		height: 100%;
+		row-gap: 13px;
+	}
+
+	.info-list__item-address__contact,
+	.info-list__item-link__contact,
+	.info-list__item-text__contact,
+	.info-list__item-hours,
+	.accrodion__questions h3 {
+		font-size: 17px;
+	}
+
+	.brands,
+	.catalog {
+		padding-bottom: 60px;
+	}
+
+	.memories,
+	.contact__wrapper,
+	.download-about__wrapper {
+		margin-top: 60px;
+	}
+
+	.about__title,
+	.contact__title {
+		margin-top: 25px;
+	}
+
+	.reviews__title,
+	.questions__title {
+		margin-bottom: 13px;
+	}
+
+	.details__list-equipment__item + .details__list-equipment__item {
+		margin-top: 10px;
+	}
+
+	.details__list-wrapper {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	.details__title {
+		margin-bottom: 15px;
+	}
+
+	.footer__info,
+	.details__info-link,
+	.details__list,
+	.catalog__title {
+		margin-bottom: 25px;
+	}
+
+	.facts__item {
+		justify-content: center;
+	}
+
+	.facts__item-image {
+		width: 60px;
+		height: 60px;
+	}
+
+	.facts__item-content b {
+		margin-bottom: 2px;
+	}
+
+    .menu__list {
+        row-gap: 10px;
+    }
+
+    .footer__content {
         row-gap: 20px;
-    }
-
-    .posts__list, 
-    .info-list__contact,
-    .download-about {
-        margin-bottom: 60px;
-    }
-
-    .info-list__contact {
-        margin-block: 80px;
-    }
-
-    .info-list {
-        gap: 35px;
-    }
-
-    .book__title {
-        margin-bottom: 20px;
-    }
-
-    .posts__list-item {
-        width: 100%;
-        height: 100%;
-        row-gap: 13px;
-    }
-
-    .info-list__item-address__contact, 
-    .info-list__item-link__contact,
-    .info-list__item-text__contact,
-    .info-list__item-hours,
-    .accrodion__questions h3 {
-        font-size: 17px;
-    }
-
-    .brands,
-    .catalog {
-        padding-bottom: 60px;
-    }
-
-    .memories, 
-    .contact__wrapper,
-    .download-about__wrapper {
-        margin-top: 60px;
-    }
-
-    .about__title, .contact__title {
-        margin-top: 25px;
-    }
-
-    .reviews__title, 
-    .questions__title {
-        margin-bottom: 13px;
-    }
-
-    .details__list-equipment__item + .details__list-equipment__item {
-        margin-top: 10px;
-    }
-
-    .details__list-wrapper {
-        flex-direction: column;
-        row-gap: 15px;
-    }
-
-    .details__title {
-        margin-bottom: 15px;
-    }
-
-    .footer__info, 
-    .details__info-link, 
-    .details__list, .catalog__title {
-        margin-bottom: 25px;
     }
 }
 
@@ -794,11 +848,11 @@
 		padding-block: 30px;
 	}
 
-    .facts__item-image {
-        margin-right: 0;
-    }
+	.facts__item-image {
+		margin-right: 0;
+	}
 
-    .facts__item-content b {
-        margin-bottom: 3px;
-    }
+	.facts__item-content b {
+		margin-bottom: 3px;
+	}
 }

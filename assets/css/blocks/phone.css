@@ -1,0 +1,43 @@
+.phone__image-wrapper {
+    margin-right: 16px;
+
+    width: 40px;
+    aspect-ratio: 1;
+
+	background-color: var(--color-orange);
+    border-radius: var(--border-radius-big);
+
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.phone__image-wrapper--big {
+    width: 64px;
+    aspect-ratio: 1;
+}
+
+.phone__image-wrapper::before {
+    content: '';
+    width: 24px;
+    aspect-ratio: 1;
+    background: url("../../images/icons/footer-phone.svg") center/contain no-repeat;
+}
+
+.phone__content-link {
+    font-weight: 600;
+    line-height: 1.62;
+}
+
+.phone__content-link:hover {
+    color: var(--color-violet);
+}
+
+.phone__content-text--big,
+.phone__content-link--big {
+    font-size: 20px;
+}
+
+.phone__content-link--big {
+    line-height: 1.3;
+}

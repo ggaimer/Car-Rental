@@ -4,11 +4,12 @@
 
 
 /* blocks */
+@import url("blocks/header.css");
 @import url("blocks/footer.css");
 @import url("blocks/accordion.css");
 @import url("blocks/feedback.css");
 @import url("blocks/download.css");
-@import url("blocks/about/about.css");
+@import url("blocks/about.css");
 @import url("blocks/advantages.css");
 @import url("blocks/book.css");
 @import url("blocks/brands.css");
@@ -16,10 +17,10 @@
 @import url("blocks/card.css");
 @import url("blocks/catalog.css");
 @import url("blocks/catalog-preview.css");
-@import url("blocks/contact/contact.css");
-@import url("blocks/details/details.css");
+@import url("blocks/contact.css");
+@import url("blocks/details.css");
 @import url("blocks/facts.css");
-@import url("blocks/header.css");
+@import url("blocks/phone.css");
 @import url("blocks/info-list.css");
 @import url("blocks/memories.css");
 @import url("blocks/nav.css");

@@ -51,6 +51,7 @@
 }
 
 .book__link:hover {
+    color: var(--color-white);
 	background-color: var(--color-violet);
 }
 

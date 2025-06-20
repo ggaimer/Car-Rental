@@ -25,5 +25,5 @@
 }
 
 .catalog-preview__top-link:hover {
-	color: var(--color-orange);
+    color: var(--color-violet);
 }

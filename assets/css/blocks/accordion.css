@@ -1,6 +1,12 @@
 .accrodion__questions svg {
 	color: var(--color-black);
-	transition: transform 0.8s ease;
+    transform: rotate(180deg);
+	transition: transform 400ms ease;
+}
+
+.questions__accordion:nth-of-type(4) .book__accordion-questions.accrodion__questions svg,
+.questions__accordion:nth-of-type(5) .book__accordion-questions.accrodion__questions svg {
+    transform: rotate(0deg);
 }
 
 .accrodion__questions h3 {
@@ -29,10 +35,11 @@
 .accrodion__answer {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.8s ease;
+	transition: max-height 400ms ease;
 }
 
 .questions__accordion {
+    position: relative;
 	padding: 40px;
 	cursor: pointer;
 	border: 2px solid #adb5bd;
@@ -43,13 +50,13 @@
 	margin-top: 24px;
 }
 
-.questions__accordion.active .accrodion__answer {
+.questions__accordion--open .accrodion__answer {
 	max-height: 204px;
-	animation: accrodionAnswerAnimation 1s ease-in-out;
+	animation: accrodionAnswerAnimation 400ms ease-in-out;
 }
 
-.questions__accordion.active svg {
-	transform: rotate(180deg);
+.questions__accordion--open svg {
+	transform: rotate(0deg);
 }
 
 .accrodion__list {

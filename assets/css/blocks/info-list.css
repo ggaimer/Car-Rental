@@ -5,7 +5,7 @@
 }
 
 .info-list__item-link:hover {
-	color: var(--color-orange);
+	color: var(--color-violet);
 }
 
 .info-list__item-address {
@@ -51,10 +51,6 @@
 	background: url(../../images/icons/email.svg) center / contain no-repeat;
 }
 
-.info-list__item:last-child .info-list__item-image::before {
-	background: url(../../images/icons/clock.svg) center / contain no-repeat;
-}
-
 .info-list__item-hours {
     font-size: 20px;
     font-weight: 600;
@@ -95,5 +91,5 @@
 }
 
 .info-list__item.info-list__item-contact .info-list__item-image.info-list__item-image__contact:nth-last-of-type()::before {
-    background: url(../../images/icons/clock.svg) center / contain no-repeat;
+    background: url(../../images/icons/footer-phone.svg) center / contain no-repeat;
 }

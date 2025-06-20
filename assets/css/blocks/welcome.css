@@ -1,6 +1,8 @@
 .welcome__wrapper {
 	position: relative;
 
+    height: 100vh;
+
 	padding: 78px;
 	border-radius: 40px;
 

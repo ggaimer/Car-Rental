@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,46 +28,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap" rel="stylesheet">
-    <title>Details Car</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Select Car</title>
+    <link rel="stylesheet" href="../assets/../assets/css/style.css">
 </head>
+
 <body>
     <div class='wrapper'>
         <header class="header">
             <div class="container">
                 <div class='header__inner'>
-                    <a href="/" class="logo">
-                        <img src="/images/icons/logo.svg" alt="Car Rental Logo">
+                    <a href="../index.html" class="logo">
+                        <img src="../assets/images/icons/logo.svg" alt="Car Rental Logo">
                     </a>
 
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__list-item">
-                                <a href="/" class="header__list-link">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="../index.html" class="menu__list-link">
                                     Home
                                 </a>
                             </li>
 
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link">
+                            <li class="menu__list-item">
+                                <a href="../select-car/index.html" class="menu__list-link menu__list-link--active">
                                     Vehicles
                                 </a>
                             </li>
 
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link header__list-link--active">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">
                                     Details
                                 </a>
                             </li>
 
-                            <li class="header__list-item">
-                                <a href="/css/blocks/about/about.html" class="header__list-link">
+                            <li class="menu__list-item">
+                                <a href="../about/index.html" class="menu__list-link">
                                     About Us
                                 </a>
                             </li>
 
-                            <li class="header__list-item">
-                                <a href="/css/blocks/contact/contact.html" class="header__list-link">
+                            <li class="menu__list-item">
+                                <a href="../contact/index.html" class="menu__list-link">
                                     Contact Us
                                 </a>
                             </li>
@@ -95,187 +97,71 @@
         </header>
 
         <main class="main">
-            <section class="details">
+            <section class="catalog">
                 <div class="container">
-                    <div class="details__wrapper">
-                        <div class="details__car">
-                            <h2 class="details__car-title">
-                                BMW
-                            </h2>
+                    <h2 class="section-title catalog__title">
+                        Select a vehicle group
+                    </h2>
 
-                            <div class="price-wrapper details__price-wrapper">
-                                <b class="price details__price">
-                                    $25
-                                </b>
+                    <nav class="catalog__nav">
+                        <ul class="catalog__nav-list">
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button catalog__nav-button--active" data-category="all">
+                                    All vehicles
+                                </button>
+                            </li>
 
-                                <span class="price-day">
-                                    / day
-                                </span>
-                            </div>
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button" data-category="sedan">
+                                    <img class='catalog__nav-image' src="../assets/images/icons/sedan.svg" alt="" width='28'
+                                        height='13'>
 
-                            <div class="details__slider">
-                                <div class="details__slider-image">
-                                    <img src="/images/details/details.png" alt="Picture Car" width='636' height='303'>
-                                </div>
+                                    Sedan
+                                </button>
+                            </li>
 
-                                <div class="details__slider-buttons">
-                                    <button class="details__slider-button">
-                                        <img src="/images/details/details-slider-1.png" alt="">
-                                    </button>
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button" data-category="cabriolet">
+                                    <img class='catalog__nav-image' src="../assets/images/icons/cabriolet.svg" alt=""
+                                        width='28' height='11'>
 
-                                    <button class="details__slider-button">
-                                        <img src="/images/details/details-slider-2.png" alt="">
-                                    </button>
+                                    Cabriolet
+                                </button>
+                            </li>
 
-                                    <button class="details__slider-button">
-                                        <img src="/images/details/details-slider-3.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button" data-category="pickup">
+                                    <img class='catalog__nav-image' src="../assets/images/icons/pickup.svg" alt="" width='28'
+                                        height='15'>
 
-                        <div class="details__info">
-                            <h3 class="details__title">
-                                Technical Specification
-                            </h3>
+                                    Pickup
+                                </button>
+                            </li>
 
-                            <ul class="details__list">
-                                <li class="details__list-item">
-                                    <img src="/images/icons/transmission.svg" alt="">
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button" data-category="suv">
+                                    <img class='catalog__nav-image' src="../assets/images/icons/suv.svg" alt="" width='28'
+                                        height='15'>
 
-                                    <h4 class="details__list-title">
-                                        Gear Box
-                                    </h4>
+                                    Suv
+                                </button>
+                            </li>
 
-                                    <h5 class="details__list-subtitle">
-                                        Automat
-                                    </h5>
-                                </li>
+                            <li class="catalog__nav-item">
+                                <button class="catalog__nav-button" data-category="minivan">
+                                    <img class='catalog__nav-image' src="../assets/images/icons/minivan.svg" alt="" width='28'
+                                        height='13'>
 
-                                <li class="details__list-item">
-                                    <img src="/images/icons/fuel.svg" alt="">
-
-                                    <h4 class="details__list-title">
-                                        Fuel
-                                    </h4>
-
-                                    <h5 class="details__list-subtitle">
-                                        Petrol
-                                    </h5>
-                                </li>
-
-                                <li class="details__list-item">
-                                    <img src="/images/icons/doors.svg" alt="">
-
-                                    <h4 class="details__list-title">
-                                        Doors
-                                    </h4>
-
-                                    <h5 class="details__list-subtitle">
-                                        2
-                                    </h5>
-                                </li>
-
-                                <li class="details__list-item">
-                                    <img src="/images/icons/transmission.svg" alt="">
-
-                                    <h4 class="details__list-title">
-                                        Air Conditioner
-                                    </h4>
-
-                                    <h5 class="details__list-subtitle">
-                                        Yes
-                                    </h5>
-                                </li>
-
-                                <li class="details__list-item">
-                                    <img src="/images/icons/seats.svg" alt="">
-
-                                    <h4 class="details__list-title">
-                                        Seats
-                                    </h4>
-
-                                    <h5 class="details__list-subtitle">
-                                        5
-                                    </h5>
-                                </li>
-
-                                <li class="details__list-item">
-                                    <img src="/images/icons/distance.svg" alt="">
-
-                                    <h4 class="details__list-title">
-                                        Distance
-                                    </h4>
-
-                                    <h5 class="details__list-subtitle">
-                                        500
-                                    </h5>
-                                </li>
-                            </ul>
-
-                            <a href="#" class="details__info-link link">
-                                Rent a car
-                            </a>
-
-                            <h3 class="details__title">
-                                Car Equipment
-                            </h3>
-
-                            <div class='details__list-wrapper'>
-                                <ul class="details__list-equipment">
-                                    <li class="details__list-equipment__item">
-                                        ABS
-                                    </li>
-
-                                    <li class="details__list-equipment__item">
-                                        Air Bags
-                                    </li>
-
-                                    <li class="details__list-equipment__item">
-                                        Cruise Control
-                                    </li>
-                                </ul>
-
-                                <ul class="details__list-equipment">
-                                    <li class="details__list-equipment__item">
-                                        ABS
-                                    </li>
-
-                                    <li class="details__list-equipment__item">
-                                        Air Bags
-                                    </li>
-
-                                    <li class="details__list-equipment__item">
-                                        Cruise Control
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="catalog-preview">
-                <div class="container">
-                    <div class="catalog-preview__top">
-                        <h2 class="catalog-preview__top-title section-title">
-                            Other cars
-                        </h2>
-
-                        <a href="../../../select-car.html" class="catalog-preview__top-link">
-                            View All
-
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
+                                    Minivan
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <ul class="catalog__list">
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/mercedes-sedan.png" alt="Mercedes Sedan">
+                            <article class="card" data-category="sedan">
+                                <img src="../assets/images/choose/mercedes-sedan.png" alt="Mercedes Sedan">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -288,12 +174,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $25
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -319,15 +205,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
                         </li>
 
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/mercedes-sport.png" alt="Mercedes Sport">
+                            <article class="card" data-category="cabriolet">
+                                <img src="../assets/images/choose/mercedes-sport.png" alt="Mercedes Sport">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -340,12 +226,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $50
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -371,15 +257,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
                         </li>
 
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/mercedes-sedan.png" alt="Mercedes Sedan">
+                            <article class="card" data-category="sedan">
+                                <img src="../assets/images/choose/mercedes-sedan.png" alt="Mercedes Sedan">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -392,12 +278,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $45
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -423,15 +309,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
                         </li>
 
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/porshe-suv.png" alt="Porshe Suv White">
+                            <article class="card" data-category="suv">
+                                <img src="../assets/images/choose/porshe-suv.png" alt="Porshe Suv White">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -444,12 +330,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $40
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -475,15 +361,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
                         </li>
 
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/toyota-sedan.png" alt="Toyota Sedan">
+                            <article class="card" data-category="sedan">
+                                <img src="../assets/images/choose/toyota-sedan.png" alt="Toyota Sedan">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -496,12 +382,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $35
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -527,15 +413,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
                         </li>
 
                         <li class="catalog__item">
-                            <article class="card">
-                                <img src="/images/choose/porshe-suv-black.png" alt="Porshe Suv Black">
+                            <article class="card" data-category="suv">
+                                <img src="../assets/images/choose/porshe-suv-black.png" alt="Porshe Suv Black">
 
                                 <div class="card__header">
                                     <div class='card__header-left'>
@@ -548,12 +434,12 @@
                                         </h4>
                                     </div>
 
-                                    <div class='price-wrapper'>
-                                        <b class="price">
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
                                             $50
                                         </b>
 
-                                        <span class="price-day">
+                                        <span class="card__day">
                                             per day
                                         </span>
                                     </div>
@@ -579,10 +465,200 @@
                                     </li>
                                 </ul>
 
-                                <a href="/css/blocks/details/details.html" class="card__link">
+                                <a href="../details/index.html" class="card__link">
                                     View Details
                                 </a>
                             </article>
+                        </li>
+
+                        <li class="catalog__item">
+                            <article class="card" data-category="minivan">
+                                <img src="../assets/images/catalog/mercedes-van.png" alt="Mercedes Van">
+
+                                <div class="card__header">
+                                    <div class='card__header-left'>
+                                        <h3 class="card__title">
+                                            Mercedes
+                                        </h3>
+
+                                        <h4 class="card__subtitle">
+                                            Van
+                                        </h4>
+                                    </div>
+
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
+                                            $50
+                                        </b>
+
+                                        <span class="card__day">
+                                            per day
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <ul class="card__list">
+                                    <li class="card__list-item">
+                                        <p class="card__list-text">
+                                            Automat
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            PB 95
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            Air Conditioner
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <a href="../details/index.html" class="card__link">
+                                    View Details
+                                </a>
+                            </article>
+                        </li>
+
+                        <li class="catalog__item">
+                            <article class="card" data-category="cabriolet">
+                                <img src="../assets/images/catalog/toyota-sport.png" alt="Toyota Sport">
+
+                                <div class="card__header">
+                                    <div class='card__header-left'>
+                                        <h3 class="card__title">
+                                            Toyota
+                                        </h3>
+
+                                        <h4 class="card__subtitle">
+                                            Sport
+                                        </h4>
+                                    </div>
+
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
+                                            $60
+                                        </b>
+
+                                        <span class="card__day">
+                                            per day
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <ul class="card__list">
+                                    <li class="card__list-item">
+                                        <p class="card__list-text">
+                                            Automat
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            PB 95
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            Air Conditioner
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <a href="../details/index.html" class="card__link">
+                                    View Details
+                                </a>
+                            </article>
+                        </li>
+
+                        <li class="catalog__item">
+                            <article class="card" data-category="sedan">
+                                <img src="../assets/images/catalog/maybach-sedan.png" alt="Maybach Sedan">
+
+                                <div class="card__header">
+                                    <div class='card__header-left'>
+                                        <h3 class="card__title">
+                                            Maybach
+                                        </h3>
+
+                                        <h4 class="card__subtitle">
+                                            Sedan
+                                        </h4>
+                                    </div>
+
+                                    <div class='card__header-right'>
+                                        <b class="card__price">
+                                            $70
+                                        </b>
+
+                                        <span class="card__day">
+                                            per day
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <ul class="card__list">
+                                    <li class="card__list-item">
+                                        <p class="card__list-text">
+                                            Automat
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            PB 95
+                                        </p>
+                                    </li>
+
+                                    <li class="card__list-item">
+                                        <p class='card__list-text'>
+                                            Air Conditioner
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <a href="../details/index.html" class="card__link">
+                                    View Details
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="brands">
+                <div class="container">
+                    <h2 class="visually-hidden">
+                        Partners
+                    </h2>
+
+                    <ul class="brands__list">
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/toyota.svg" alt="Logo Toyota" width='81' height='53'>
+                        </li>
+
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/ford.svg" alt="Logo Ford" width='115' height='44'>
+                        </li>
+
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/mercedes.svg" alt="Logo Mercedes" width='52' height='51'>
+                        </li>
+
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/jeep.svg" alt="Logo Jeep" width='109' height='44'>
+                        </li>
+
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/bmw.svg" alt="Logo BMW" width='55' height='54'>
+                        </li>
+
+                        <li class='brands__list-item'>
+                            <img src="../assets/images/icons/audio.svg" alt="Logo Audio" width='118' height='37'>
                         </li>
                     </ul>
                 </div>
@@ -592,8 +668,8 @@
         <footer class='footer'>
             <div class="container">
                 <div class="footer__info">
-                    <a href="#" class="logo">
-                        <img src="/images/icons/logo.svg" alt="Car Rental Logo">
+                    <a href="../index.html" class="logo">
+                        <img src="../assets/images/icons/logo.svg" alt="Car Rental Logo">
                     </a>
 
                     <ul class="info-list">
@@ -625,15 +701,15 @@
                             </div>
                         </li>
 
-                        <li class="info-list__item">
-                            <div class="info-list__item-image"></div>
+                        <li class="info-list__item phone">
+                            <div class="phone__image-wrapper"></div>
 
-                            <div class="info-list__item-content">
-                                <p class="info-list__item-text">
+                            <div class="phone__content">
+                                <p class="phone__content-text">
                                     Phone
                                 </p>
 
-                                <a class='info-list__item-link' href="tel:+5375476401">
+                                <a class='phone__content-link' href="tel:+5375476401">
                                     +537 547-6401
                                 </a>
                             </div>
@@ -702,77 +778,73 @@
                         </ul>
                     </div>
 
-                    <nav class="footer__nav">
-                        <div class="footer__nav-wrapper">
-                            <h3 class='footer__title'>
-                                Useful links
-                            </h3>
+                    <nav class="menu menu__footer">
+                        <div class='menu__footer-wrapper'>
+                            <h3 class="footer__title">Useful links</h3>
 
-                            <ul class="footer__nav-list">
-                                <li class="footer__nav-item">
-                                    <a href="/css/blocks/about/about.html" class="footer__nav-link">
+                            <ul class="menu__list menu__footer-list">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="../about/index.html" class="menu__list-link menu__footer-link">
                                         About us
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="/css/blocks/contact/contact.html" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="../contact/index.html" class="menu__list-link menu__footer-link">
                                         Contact us
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         Gallery
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="about/index.html" class="menu__list-link menu__footer-link">
                                         Blog
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="contact/index.html" class="menu__list-link menu__footer-link">
                                         F.A.Q
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="footer__nav-wrapper">
-                            <h3 class='footer__title'>
-                                Vehicles
-                            </h3>
+                        <div class='menu__footer-wrapper'>
+                            <h3 class="footer__title">Vehicles</h3>
 
-                            <ul class="footer__nav-list">
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                            <ul class="menu__list menu__footer-list">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         Sedan
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         Cabriolet
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         Pickup
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         Minivan
                                     </a>
                                 </li>
 
-                                <li class="footer__nav-item">
-                                    <a href="#" class="footer__nav-link">
+                                <li class="menu__list-item menu__footer-item">
+                                    <a href="#" class="menu__list-link menu__footer-link">
                                         SUV
                                     </a>
                                 </li>
@@ -786,11 +858,11 @@
                         </h2>
 
                         <a href="#" class="footer__link">
-                            <img src="/images/footer/footer-app-store.png" alt="Picture service App Store">
+                            <img src="../assets/images/footer/footer-app-store.png" alt=" Picture service App Store">
                         </a>
 
                         <a href="#" class="footer__link">
-                            <img src="/images/footer/footer-google-play.png" alt="Picture service Google Play">
+                            <img src="../assets/images/footer/footer-google-play.png" alt="Picture service Goolge Play">
                         </a>
                     </div>
                 </div>
@@ -802,6 +874,7 @@
         </footer>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
+
 </html>

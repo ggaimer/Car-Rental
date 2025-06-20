@@ -3,19 +3,19 @@
 	color: #000;
 }
 
-.header__list-link {
+.menu__list-link {
 	font-family: var(--second-family);
 	padding: 4px 12px;
 	font-size: 18px;
 	font-weight: 500;
 }
 
-.header__list-link--active {
+.menu__list-link--active {
 	font-weight: 700;
 	cursor: default;
 }
 
-.header__list-link:not(.header__list-link--active):hover,
+.menu__list-link:not(.menu__list-link--active):hover,
 .header__info-link:hover {
 	color: var(--color-violet);
 }
@@ -29,7 +29,7 @@
 	row-gap: 12px;
 }
 
-.header__list {
+.menu__list {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 44px;
@@ -43,7 +43,7 @@
 }
 
 .header__info-text {
-    line-height: normal;
+	line-height: normal;
 }
 
 .header__info::before {

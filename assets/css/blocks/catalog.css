@@ -49,6 +49,12 @@
     filter: invert(1);
 }
 
+.catalog__nav-button--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
 .catalog__nav-list {
     display: flex;
     justify-content: center;
